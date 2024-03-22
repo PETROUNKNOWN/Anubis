@@ -1,0 +1,237 @@
+:root {
+  --blue: #00091f;
+  --blueLite: #00123f;
+  --white: #f5deb3;
+  --red: #ff0000;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+#welcome {
+  height: 100vh;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  background: linear-gradient(#000000 40%, #00000000);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  height: 5rem;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.name .nameAnubis h1 {
+  margin-top: -1rem;
+  font-size: 5rem;
+  text-decoration: underline;
+  transition-duration: 1s;
+  font-family: Sarpanch;
+}
+
+.name:hover .nameAnubis h1 {
+  transform: translateY(-6rem);
+  transition-duration: 1s;
+  opacity: 0;
+}
+
+.name .nameHiero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  height: 5rem;
+  border-radius: 50px;
+  margin-top: -2.5rem;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+.name:hover .nameHiero {
+  transform: translateY(-6.8rem);
+  transition-duration: 1s;
+  opacity: 1;
+}
+
+.name .nameHiero .hieroName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+  transition-duration: 1s;
+}
+
+.name .nameHiero .icon1 {
+  width: 0.8rem;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+.name .nameHiero .icon2 {
+  width: 3.5rem;
+}
+.name .nameHiero .icon3 {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+}
+.name .nameHiero .icon4 {
+  width: 2rem;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+.name .nameHiero .icon5 {
+  width: 3rem;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+#welcome .anubisImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#welcome .anubisImg img {
+  height: 50rem;
+  filter: blur(7px);
+}
+
+.Pics {
+  display: none;
+}
+
+#intro {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#intro .sec {
+  background-color: var(--blueLite);
+  border-radius: 15px;
+  border: white solid 2px;
+  height: min-content;
+  width: 40.4rem;
+  z-index: -1;
+}
+
+#intro .sec .imageContainer {
+  position: relative;
+}
+
+#intro .sec #ANUBIS3D {
+  width: 40rem;
+  margin-top: -20rem;
+  transition: transform 1s ease-out;
+}
+
+#intro .sec .anubis3DShadow {
+  width: 38rem;
+  margin-top: -19rem;
+  filter: brightness(0) blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: scale(1.05) translateX(0.1rem) translateY(-2rem);
+}
+
+#intro .sec .imageContainer .borderTest {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+  border-bottom: white solid 7px;
+  border-left: white solid 5px;
+  border-right: white solid 5px;
+  height: 32rem;
+  width: 40rem;
+  margin: -0.1rem;
+}
+
+#intro .sec1 {
+  background-color: var(--blue);
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 1.3rem;
+}
+
+#intro .sec1 .text1 p {
+  text-align: left;
+  width: 65ch;
+  font-size: 1.5rem;
+  font-family: Strait;
+}
+
+#intro .sec1 .text1 .span1 {
+  font-size: 6rem;
+  font-family: Smooch Sans;
+}
+
+
+
+#horus {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#horus .horusImg img {
+  height: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.sign {
+  color: var(--red);
+  text-align: end;
+  font-family: Rationale;
+  pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  #intro .sec1 .text1 p {
+    text-align: center;
+    width: 35ch;
+    font-size: 1.3rem;
+  }
+
+  #intro .sec {
+    width: 20.4rem;
+    
+  }
+  
+  #intro .sec #ANUBIS3D {
+    width: 20rem;
+    margin-top: -10rem;
+  }
+  
+  #intro .sec .anubis3DShadow {
+    width: 18rem;
+    margin-top: -9rem;
+  }
+  
+  #intro .sec .imageContainer .borderTest {
+    display: none;
+  }
+}
